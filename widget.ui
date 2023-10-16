@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>904</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>110</y>
+     <width>191</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>电梯内按钮</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QCheckBox" name="checkBox_10">
+      <property name="text">
+       <string>10</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QCheckBox" name="checkBox_09">
+      <property name="text">
+       <string>9</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_04">
+      <property name="text">
+       <string>4</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox_05">
+      <property name="text">
+       <string>5</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QCheckBox" name="checkBox_07">
+      <property name="text">
+       <string>7</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="checkBox_02">
+      <property name="text">
+       <string>2</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCheckBox" name="checkBox_08">
+      <property name="text">
+       <string>8</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QCheckBox" name="checkBox_01">
+      <property name="text">
+       <string>1</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QCheckBox" name="checkBox_06">
+      <property name="text">
+       <string>6</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="checkBox_03">
+      <property name="text">
+       <string>3</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_chooseFloor</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="pushButton_open">
+      <property name="text">
+       <string>开门</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="pushButton_close">
+      <property name="text">
+       <string>关门</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>171</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>1号楼电梯情况</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="topMargin">
+     <number>4</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label_floor">
+      <property name="text">
+       <string>第    楼</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QCheckBox" name="checkBox_10up">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>10</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>10</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_10down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>10</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QCheckBox" name="checkBox_9up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>9</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_09">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>9</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_9down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>9</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QCheckBox" name="checkBox_8up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>8</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_08">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>8</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_8down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>8</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QCheckBox" name="checkBox_7up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>7</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_07">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>7</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_7down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>7</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QCheckBox" name="checkBox_6up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>6</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_06">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>6</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_6down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>6</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QCheckBox" name="checkBox_5up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>5</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_05">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>5</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_5down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>5</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="checkBox_4up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>4</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_04">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>4</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_4down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>4</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="checkBox_3up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>3</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_03">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>3</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_3down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>3</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="checkBox_2up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>2</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_02">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>2</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_2down">
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>2</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_1">
+      <item>
+       <widget class="QCheckBox" name="checkBox_1up">
+        <property name="text">
+         <string>上</string>
+        </property>
+        <property name="upId" stdset="0">
+         <string>1</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_up</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_01">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="id" stdset="0">
+         <string>1</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_door</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_1down">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>下</string>
+        </property>
+        <property name="downId" stdset="0">
+         <string>1</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_down</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>120</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_chooseFloor">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="buttonGroup_door"/>
+  <buttongroup name="buttonGroup_down">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+   <property name="downId" stdset="0">
+    <string>0</string>
+   </property>
+  </buttongroup>
+  <buttongroup name="buttonGroup_up">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+   <property name="upId" stdset="0">
+    <string>0</string>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>
